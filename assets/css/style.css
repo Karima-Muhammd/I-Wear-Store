@@ -1,0 +1,64 @@
+
+.caption
+{
+    font-size: 4rem;
+    color: #EEE;
+    font-weight: 700;
+
+}
+.main-navbar .bg-light
+{
+    background-color:black !important;
+}
+body{
+    font-family: "Berlin Sans FB", sans-serif;
+    background-color:#dddde9;
+}
+.form-control
+{
+    background-color:transparent !important;
+}
+.main-navbar  .navbar-light .navbar-nav .nav-link
+{
+    color:#ffffff !important;
+    font-family: "Berlin Sans FB", sans-serif;
+
+}
+.main-navbar .navbar-light .navbar-brand
+{
+    color:#ffffff !important;
+
+}
+.main-navbar .navbar
+{
+   padding:  0;
+    padding-left: 4px;
+}
+.sub-navbar .navbar
+{
+   padding: 1.3rem 2rem;
+    opacity: 0.7;
+}
+.sub-navbar .bg-light
+{
+    background:white !important;
+}
+.index .row
+{
+    padding: 0;
+    margin-right: 0;
+    margin-left:0;
+
+}
+
+.index .col-md-4 , .index .col-md-8
+{
+    padding: 0;
+    margin-right: 0;
+}
+.shopping .col-md-3
+{
+    padding: 4px;
+    margin-right: 0;
+    border-radius: 15px;
+}
