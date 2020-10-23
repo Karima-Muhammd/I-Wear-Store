@@ -25,10 +25,12 @@ class Product extends DB
     {
         $query="Select * from products where id='$Pro_Id'";
         $result=mysqli_query($this->conn,$query);
-        if(mysqli_num_rows($result)>0)
-           $row=mysqli_fetch_assoc($result);
+        if(mysqli_num_rows($result)>0) {
+            $row = mysqli_fetch_assoc($result);
+            return $row;
+        }
+        return false;
 
-        return $row;
     }
     //create one
     public function Insert(array $data)

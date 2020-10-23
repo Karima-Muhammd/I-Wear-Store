@@ -10,6 +10,7 @@ $Cate_name=$pro->GetCategory($id);
 
 <div class="show-product">
 <?php require_once 'inc/subnav.php'?>
+    <?php if($product!=false):?>
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-md-6">
@@ -17,7 +18,7 @@ $Cate_name=$pro->GetCategory($id);
             </div>
                 <div class="col-md-6 mt-5 ">
                             <h6 class="card-title"><?php echo ucfirst($Cate_name['Cate_Name'])?></h6>
-                            <h6 class="card-title"><?php echo $product['name']?></h6>
+                            <h6 class="card-title"><?php echo ucfirst($product['name'])?></h6>
                             <p style="margin-right: 30px;" class="card-title text-muted">- <?php echo '$'.$product['price']?></p>
                             <p style="font-weight: lighter" class="card-title "><?php echo ($product['descr'])?></p>
                             <p style="margin-right: 30px;" class="card-title text-muted">Available Quantity :  <?php echo '$'.$product['quantity']?></p>
@@ -29,5 +30,8 @@ $Cate_name=$pro->GetCategory($id);
                 </div>
         </div>
     </div>
+    <?php else: ?>
+    <P class="text-center mt-5">No Product Found  !! </P>
+    <?php endif;?>
 
 </div>
