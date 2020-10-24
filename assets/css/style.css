@@ -14,9 +14,12 @@ body{
     font-family: "Berlin Sans FB", sans-serif;
     background-color:#dddde9;
 }
-.form-control
+.row .col-md-7 .form-control , .row .col-md-7 .input-group
 {
-    background-color:transparent !important;
+    background-color:white !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
 }
 .main-navbar  .navbar-light .navbar-nav .nav-link
 {
@@ -36,7 +39,7 @@ body{
 }
 .sub-navbar .navbar
 {
-   padding: 1.3rem 2rem;
+   padding: .3rem 2rem;
     opacity: 0.7;
 }
 .sub-navbar .bg-light

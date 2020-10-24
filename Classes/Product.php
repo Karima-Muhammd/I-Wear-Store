@@ -55,6 +55,21 @@ class Product extends DB
         }
         return false;
     }
+    public function GetAllCategories()
+    {
+        $query="SELECT * FROM categories";
+        $result =mysqli_query($this->conn,$query);
+        $rows=[];
+        if(mysqli_num_rows($result)>0)
+        {
+            while ($row=mysqli_fetch_assoc($result))
+            {
+                $rows[]=$row;
+            }
+            return $rows;
+        }
+        return false;
+    }
     //edit
     public function Update($id,array $data)
     {
