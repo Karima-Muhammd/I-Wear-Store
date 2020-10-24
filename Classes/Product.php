@@ -35,9 +35,13 @@ class Product extends DB
     //create one
     public function Insert(array $data)
     {
+
+
         $query="insert into products (`name`,`price`,`descr`,`cate_id`,`img`,`quantity`)
-                VALUES ('{$data['name']}','{$data['price']}','{$data['descr']}','{$data['cate_id']}','{$data['img']}','{$data['quantity']}') ";
+                VALUES ('{$data['name']}','{$data['price']}','{$data['descr']}',
+                '{$data['cate_id']}','{$data['img']}','{$data['quantity']}') ";
         $result =mysqli_query($this->conn,$query);
+        var_dump($result);
         if($result)
             return true;
         else
@@ -45,7 +49,7 @@ class Product extends DB
     }
     public function GetCategory($id)
     {
-        $query="SELECT categories.Cate_Name FROM  products join categories on 
+        $query="SELECT * FROM  products join categories on 
                  products.cate_id=categories.id WHERE products.id='$id';";
         $result =mysqli_query($this->conn,$query);
         if(mysqli_num_rows($result)>0)
@@ -75,13 +79,13 @@ class Product extends DB
     {
         $query="Update  products 
         set 
-        `name`='{$data['name']}' ,
-        `price`='{$data['price']}' ,
-        `descr`='{$data['descr']}' , 
-        `cate_id`='{$data['cate_id']}' , 
-        `img`='{$data['img']}' ,
+        `name`='{$data['name']}',
+        `price`='{$data['price']}',
+        `descr`='{$data['descr']}', 
+        `cate_id`='{$data['cate_id']}', 
+        `img`='{$data['img']}',
         `quantity`='{$data['quantity']}'
-         where id='$id' ";
+         where id='$id'";
         $result =mysqli_query($this->conn,$query);
         return $result;
     }
@@ -95,5 +99,6 @@ class Product extends DB
         else
             return false;
     }
+
 
 }

@@ -20,12 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e923545-1e1a-40b4-b57c-c5cccd0eda30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/safina-coat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Add.php" beforeDir="false" afterPath="$PROJECT_DIR$/Add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/DB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shopping.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Show.php" beforeDir="false" afterPath="$PROJECT_DIR$/Show.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/Str.php" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/Str.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/subnav.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/subnav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +62,16 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\My-Github\I-Wear-Store\assets\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\My-Github\I-Wear-Store\assets\images" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,7 +81,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603496983230</updated>
-      <workItem from="1603496989098" duration="3847000" />
+      <workItem from="1603496989098" duration="3992000" />
+      <workItem from="1603538685010" duration="8810000" />
+      <workItem from="1603550941137" duration="3979000" />
+      <workItem from="1603556891239" duration="5667000" />
     </task>
     <servers />
   </component>
@@ -79,6 +101,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -92,9 +115,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1603499696623" />
-    <state x="518" y="287" key="NewPhpFileDialog" timestamp="1603497614139">
+    <state x="463" y="86" key="NewPhpClassDialog" timestamp="1603544581925">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1603497614139" />
+    <state x="463" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1603544581925" />
+    <state x="518" y="287" key="NewPhpFileDialog" timestamp="1603563859087">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1603563859087" />
   </component>
 </project>

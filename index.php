@@ -5,7 +5,7 @@ require_once 'Classes/Product.php';
 ?>
 <div class="index">
     <div class="row">
-        <div class="col-md-4 " style="background-color: #dddde7;height:611px; border-right: 2px #abdde5 dashed; border-bottom:1px #a8daff dashed; ">
+        <div class="col-md-4 " style="background-color: #dddde7;43rem; border-right: 2px #abdde5 dashed; border-bottom:1px #a8daff dashed; ">
             <div class="text-center" style="margin-top:30%;" >
                 <h1>Hello , Shop Now </h1>
                 <h2>With New Collections </h2>
@@ -15,7 +15,7 @@ require_once 'Classes/Product.php';
         </div>
 
         <div class="col-md-8">
-        <img style="max-width:100%; height:611px;border-bottom: 1px #a8daff dashed" src="assets/images/pexels-photo-5632402.jpeg">
+        <img style="max-width:100%; height:43rem;border-bottom: 1px #a8daff dashed" src="assets/images/pexels-photo-5632402.jpeg">
         </div>
     </div>
 </div>

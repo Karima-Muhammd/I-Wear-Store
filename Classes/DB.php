@@ -12,7 +12,13 @@ class DB
         $this->Password='';
         $this->DB_Name='e-commerce';
         $this->conn=mysqli_connect($this->Server_Name,$this->Username,$this->Password,$this->DB_Name);
-        return $this->conn;
+        if($this->conn)
+        {
+            return $this->conn;
+
+        }
+
+        return false;
     }
     public function connect()
     {

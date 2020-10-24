@@ -24,7 +24,7 @@ $Cate_name=$pro->GetCategory($id);
                             <p style="margin-right: 30px;" class="card-title text-muted">Available Quantity :  <?php echo '$'.$product['quantity']?></p>
                     <form action="" method="post" class="mt-5">
                         <a  href="Shopping.php" class="btn btn-success ">Back</a>
-                        <a href="#" class="btn btn-primary ">Edit</a>
+                        <a href="Edit.php?id=<?php echo ($product['id'])?>" class="btn btn-primary ">Edit</a>
                         <a href="#" class="btn btn-danger ">Delete</a>
                     </form>
                 </div>

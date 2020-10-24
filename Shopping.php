@@ -23,13 +23,14 @@ $Arr_products=$pro->Get_All_Products();
                     <div class="card-body">
                         <h6 class="card-title"><?php echo $product['name']?></h6>
                         <p style="margin-right: 30px;" class="card-title text-muted">- <?php echo '$'.$product['price']?></p>
-                        <p style="font-weight: lighter" class="card-title "><?php echo Str::max_Letter($product['descr'])?></p>
+                        <p style="font-weight: lighter" class="card-title "><?php echo Str::max_Letter($product['descr'],30)?></p>
                         <div class="mt-1">
                        <form action="" method="post">
                         <a  href="Show.php?id=<?php echo $product['id']?>" class="btn btn-success ">Show</a>
-                        <a href="#" class="btn btn-primary ">Edit</a>
-                        <a href="#" class="btn btn-danger ">Delete</a>
+                        <a href="Edit.php?id=<?php echo $product['id']?>" class="btn btn-primary ">Edit</a>
+                        <a href="Delete.php?id=<?php echo $product['id']?>" class="btn btn-danger ">Delete</a>
                        </form>
+
                         </div>
                     </div>
                 </div>

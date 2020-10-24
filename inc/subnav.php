@@ -11,14 +11,8 @@
             <ul class="navbar-nav m-auto ">
 
                 <li class="nav-item active">
-                    <form action="" method="post">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Search By Name or ID">
-                            <div class="input-group-append">
-                                <button  class="btn btn-outline-secondary border-0" type="button">Search for Product</button>
-                            </div>
-                        </div>
-                    </form>
+                    <a class="nav-link" href="Add.php"> Search </a>
+
                 </li>
 
                 <li class="nav-item ">

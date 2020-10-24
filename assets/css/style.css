@@ -12,7 +12,11 @@
 }
 body{
     font-family: "Berlin Sans FB", sans-serif;
-    background-color:#dddde9;
+    background-color: #ddddf0;
+}
+.shopping .card
+{
+    background-color: rgba(255,255,255,0.4);
 }
 .row .col-md-7 .form-control , .row .col-md-7 .input-group
 {
@@ -40,24 +44,20 @@ body{
 .sub-navbar .navbar
 {
    padding: .3rem 2rem;
-    opacity: 0.7;
+
 }
 .sub-navbar .bg-light
 {
-    background:white !important;
+    background:transparent !important;
 }
+
 .index .row
 {
-    padding: 0;
-    margin-right: 0;
-    margin-left:0;
-
+    margin-right:0;
 }
-
-.index .col-md-4 , .index .col-md-8
+.index .col-md-8  , .index .col-md-4
 {
     padding: 0;
-    margin-right: 0;
 }
 .shopping .col-md-3
 {
