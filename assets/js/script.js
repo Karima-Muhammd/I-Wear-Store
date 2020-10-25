@@ -7,3 +7,5 @@ function myFunction() {
 
     }
 }
+var count = 0;
+var length;

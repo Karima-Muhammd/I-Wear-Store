@@ -2,6 +2,7 @@
 require_once 'inc/header.php';
 require_once 'Classes/DB.php';
 require_once 'Classes/Product.php';
+require_once 'Classes/Image.php';
 $pro=new Product();
 $categories=$pro->GetAllCategories();
 ?>
@@ -44,20 +45,37 @@ $categories=$pro->GetAllCategories();
                     <?php
                     if(isset($_POST['save_btn']))
                     {
+                        $data=[];
+                        $name=$_POST['name'];
+                        $price=$_POST['price'];
+                        $dsrcip=$_POST['descrip'];
+                        $quantity=$_POST['quantity'];
+                        $cate_id=$_POST['cate_id'];
+                        $img=$_FILES['img'];
 
-                        $data['name']=$_POST['name'];
-                        $data['price']=$_POST['price'];
-                        $data['descrip']=$_POST['descrip'];
-                        $data['quantity']=$_POST['quantity'];
-                        $data['cate_id']=$_POST['cate_id'];
-                        $data['img']='safina-coat.jpg';
+                        if(true)//valid
+                        {
+                            $image=new Image($img);
+                            $data=[
+                                'name'=>$name,
+                                'price'=>$price,
+                                'descrip'=>$dsrcip,
+                                'quantity'=>$quantity,
+                                'cate_id'=>$cate_id,
+                                'img'=>$image->upload_name,
+                            ];
 
-                        if($pro->Insert($data)==true)
-                            $success_msg="Successfully Added";
-                        else
-                            $error_msg="Can't Add Product";
+                            if($pro->Insert($data)==true)
+                            {
+                                $image->upload();
+                                $success_msg = "Successfully Added";
+                            }
+                            else
+                                $error_msg="Can't Add Product";
 
-                        require_once 'function/message.php';
+                            require_once 'function/message.php';
+
+                        }
 
                     }
                     ?>

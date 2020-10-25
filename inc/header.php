@@ -1,4 +1,5 @@
-<?php require_once 'config.php'?>
+<?php require_once 'config.php';
+ob_start();?>
 
 <!doctype html>
 <html lang="en">

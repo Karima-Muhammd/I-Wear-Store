@@ -1,6 +1,5 @@
 <?php
-
-
+require_once 'Image.php';
 class Product extends DB
 {
     private $pro_id;
@@ -38,10 +37,9 @@ class Product extends DB
 
 
         $query="insert into products (`name`,`price`,`descr`,`cate_id`,`img`,`quantity`)
-                VALUES ('{$data['name']}','{$data['price']}','{$data['descr']}',
+                VALUES ('{$data['name']}','{$data['price']}','{$data['descrip']}',
                 '{$data['cate_id']}','{$data['img']}','{$data['quantity']}') ";
         $result =mysqli_query($this->conn,$query);
-        var_dump($result);
         if($result)
             return true;
         else
@@ -77,15 +75,40 @@ class Product extends DB
     //edit
     public function Update($id,array $data)
     {
-        $query="Update  products 
-        set 
-        `name`='{$data['name']}',
-        `price`='{$data['price']}',
-        `descr`='{$data['descr']}', 
-        `cate_id`='{$data['cate_id']}', 
-        `img`='{$data['img']}',
-        `quantity`='{$data['quantity']}'
-         where id='$id'";
+        $product =$this->Get_Product($id);
+        $image_Product=$product['img'];
+
+        if(!empty($data['img']['name']))
+        {
+            //delete old img
+            unlink('assets/images/'.$image_Product);
+            $image=new Image($data['img']);
+            $image->upload();
+            $image_upload=$image->upload_name;
+            $query="Update  products set 
+                    `name`='{$data['name']}',
+                    `price`='{$data['price']}',
+                    `descr`='{$data['descr']}', 
+                    `cate_id`='{$data['cate_id']}', 
+                    `img`='$image_upload',
+                    `quantity`='{$data['quantity']}'
+                     where id='$id'";
+        }
+        else
+            {
+
+            $query="Update  products set 
+                    `name`='{$data['name']}',
+                    `price`='{$data['price']}',
+                    `descr`='{$data['descr']}', 
+                    `img`='$image_Product',
+                    `cate_id`='{$data['cate_id']}', 
+                    `quantity`='{$data['quantity']}'
+                     where id='$id'";
+
+        }
+
+
         $result =mysqli_query($this->conn,$query);
         return $result;
     }

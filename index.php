@@ -15,7 +15,7 @@ require_once 'Classes/Product.php';
         </div>
 
         <div class="col-md-8">
-        <img style="max-width:100%; height:43rem;border-bottom: 1px #a8daff dashed" src="assets/images/pexels-photo-5632402.jpeg">
+        <img style="max-width:100%; height:43rem;border-bottom: 1px #a8daff dashed" src="./assets/images/pexels-karolina-grabowska-5632402.jpg">
         </div>
     </div>
 </div>

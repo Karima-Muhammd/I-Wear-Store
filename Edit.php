@@ -2,6 +2,7 @@
 require_once 'inc/header.php';
 require_once 'Classes/DB.php';
 require_once 'Classes/Product.php';
+require_once 'Classes/Image.php';
 $id=$_GET['id'];
 $pro=new Product();
 $product=$pro->Get_Product($id);
@@ -15,7 +16,7 @@ $Cate_name=$pro->GetCategory($id);
         <div class="container mt-5 mb-5">
             <div class="row">
                 <div class="col-md-6">
-                    <img  style=" height: 90%" src="assets/images/<?php echo $product['img']?>" class="img-fluid" alt="...">
+                    <img  style="height: 90%" src="assets/images/<?php echo $product['img']?>" class="img-fluid">
                 </div>
                 <div class="col-md-6 mt-5 ">
                     <form action="" method="post" enctype="multipart/form-data">
@@ -46,28 +47,41 @@ $Cate_name=$pro->GetCategory($id);
                             </select>
                         </div>
                         <div class="form-group">
-                            <input name="img" value="<?php echo $product['img']  ?>"  class="form-control" type="file" style="overflow: hidden" >
+                            <input name="img" value=""  class="form-control" type="file" style="overflow: hidden" >
                         </div>
-                        <button type="submit" name="update_btn" class="btn btn-primary">Save</button>
+                        <button type="submit" id="edit_btn" name="update_btn" class="btn btn-primary">Save</button>
                     </form>
                     <?php
-                    var_dump($product);
                     if(isset($_POST['update_btn']))
                     {
+                        $name=$_POST['name'];
+                        $price=$_POST['price'];
+                        $descr=$_POST['descr'];
+                        $quantity=$_POST['quantity'];
+                        $cate_id=$_POST['cate_id'];
+                        $img=$_FILES['img'];
+                        if(true)
+                        {
+                            $data=[
+                                'name'=>$name,
+                                'price'=>$price,
+                                'descr'=>$descr,
+                                'quantity'=>$quantity,
+                                'cate_id'=>$cate_id,
+                                'img'=>$img,
+                        ];
 
-                        $data=[];
-                        $data['name']=$_POST['name'];
-                        $data['price']=$_POST['price'];
-                        $data['descr']=$_POST['descr'];
-                        $data['quantity']=$_POST['quantity'];
-                        $data['cate_id']=$_POST['cate_id'];
-                        $data['img']='Vera_dress-Dresses-.png';
-                        if($pro->Update($id,$data))
-                            $success_msg="Successfully Updated";
-                        else
-                            $error_msg="Failed Update Product";
+                            if($pro->Update($id,$data)) {
+                                $success_msg = "Successfully Updated";
+                                header('location:Shopping.php');
+                            }
+                            else
+                                $error_msg="Failed Update Product";
 
-                        require_once 'function/message.php';
+                            require_once 'function/message.php';
+
+
+                        }
                     }
 
                     ?>

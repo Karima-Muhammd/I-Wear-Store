@@ -28,7 +28,7 @@ $Arr_products=$pro->Get_All_Products();
                        <form action="" method="post">
                         <a  href="Show.php?id=<?php echo $product['id']?>" class="btn btn-success ">Show</a>
                         <a href="Edit.php?id=<?php echo $product['id']?>" class="btn btn-primary ">Edit</a>
-                        <a href="Delete.php?id=<?php echo $product['id']?>" class="btn btn-danger ">Delete</a>
+                        <a  data-id="<?php echo $product['id']?>" href="Delete.php?id=<?php echo $product['id']?>" class="btn btn-danger delete ">Delete</a>
                        </form>
 
                         </div>
@@ -38,10 +38,9 @@ $Arr_products=$pro->Get_All_Products();
 
         <?php endforeach;?>
           <?php else: ?>
-          <P>No Product Add Yet .</P>
+          <h6 class="m-auto" >No Product Added Yet .</h6>
           <?php endif;?>
 
-      </div>
 </div>
 </div>
 <?php
