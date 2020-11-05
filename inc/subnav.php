@@ -1,4 +1,6 @@
 <?php
+if(isset($_SESSION['email'])):
+
 ?>
 <div class="sub-navbar"  >
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -10,23 +12,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto ">
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="Add.php"> Search </a>
 
-                </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="Add.php"> Add Product</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="Add_Cate.php"> Add Category</a>
 
-                <li class="nav-item ">
-                    <a class="nav-link" href="Add.php"> Add Product</a>
-                </li>
+                    </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#">View Orders</a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
-
+<?php endif;?>

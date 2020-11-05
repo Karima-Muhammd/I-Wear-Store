@@ -20,28 +20,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e923545-1e1a-40b4-b57c-c5cccd0eda30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Classes/Image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/5f95e366be0c0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/5f95e6046039c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/5f95e689ae991.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/5f95ed422ffad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/pexels-karolina-grabowska-5632402.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Add_Cate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/OrderDetails.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/5f9ed0d6b49d1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/5f9ed301c685d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/5f9ed52d75cbd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/5f9ed5536e4ba.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/5f9ed58826a7e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/5f9ed75dd6599.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/5f9ed7911263f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/5fa435f41c117.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buy_product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delete_item.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce9fbb9-16ed-4130-a407-aadb4469de8e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fce9fbb9-16ed-4130-a407-aadb4469de8e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Add.php" beforeDir="false" afterPath="$PROJECT_DIR$/Add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/Delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shopping.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Vera_dress-Dresses-.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/5f95ed315517e.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/dover-coat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/freya-shirt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pexels-photo-5632402.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/safina-coat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Show.php" beforeDir="false" afterPath="$PROJECT_DIR$/Show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/5f95e366be0c0.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/5f9ed7a084d37.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/5f95e6046039c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/5f95e689ae991.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/5f95ed315517e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/5f95ed422ffad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/message.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/subnav.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/subnav.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +86,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -77,6 +95,8 @@
       <recent name="C:\wamp64\www\My-Github\I-Wear-Store\Classes" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\My-Github\I-Wear-Store" />
+      <recent name="C:\wamp64\www\My-Github\I-Wear-Store\assets\js" />
       <recent name="C:\wamp64\www\My-Github\I-Wear-Store\assets\images" />
     </key>
   </component>
@@ -95,7 +115,32 @@
       <workItem from="1603631502021" duration="8648000" />
       <workItem from="1603643072560" duration="3535000" />
       <workItem from="1603648844040" duration="30000" />
-      <workItem from="1603652896353" duration="7711000" />
+      <workItem from="1603652896353" duration="8742000" />
+      <workItem from="1603698467386" duration="166000" />
+      <workItem from="1603716791427" duration="1139000" />
+      <workItem from="1603721111492" duration="568000" />
+      <workItem from="1603845759852" duration="2275000" />
+      <workItem from="1603980195185" duration="599000" />
+      <workItem from="1604084761829" duration="32000" />
+      <workItem from="1604156441061" duration="916000" />
+      <workItem from="1604175109378" duration="218000" />
+      <workItem from="1604218092416" duration="5457000" />
+      <workItem from="1604226951634" duration="170000" />
+      <workItem from="1604227511156" duration="1487000" />
+      <workItem from="1604232612506" duration="1508000" />
+      <workItem from="1604234195720" duration="15342000" />
+      <workItem from="1604323837829" duration="21984000" />
+      <workItem from="1604393031858" duration="18208000" />
+      <workItem from="1604428316613" duration="2666000" />
+      <workItem from="1604491081916" duration="820000" />
+      <workItem from="1604492569006" duration="8152000" />
+      <workItem from="1604501248486" duration="4580000" />
+      <workItem from="1604510681760" duration="5937000" />
+      <workItem from="1604527106846" duration="700000" />
+      <workItem from="1604527913083" duration="1858000" />
+      <workItem from="1604530140415" duration="1236000" />
+      <workItem from="1604531478833" duration="7066000" />
+      <workItem from="1604596898538" duration="786000" />
     </task>
     <servers />
   </component>
@@ -118,10 +163,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="60" y="205" key="#SQL_Dialects" timestamp="1603499641628">
+    <state x="60" y="205" key="#SQL_Dialects" timestamp="1604335504566">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="60" y="205" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1603499641628" />
+    <state x="60" y="205" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1604335504566" />
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603499696623">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -130,17 +175,29 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603646463498" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1603648872301">
+    <state x="429" y="218" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604235728219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603648872301" />
-    <state x="463" y="86" key="NewPhpClassDialog" timestamp="1603635720382">
+    <state x="429" y="218" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1604235728219" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1603721683507">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1603635720382" />
-    <state x="518" y="287" key="NewPhpFileDialog" timestamp="1603632454500">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603721683507" />
+    <state x="463" y="86" key="NewPhpClassDialog" timestamp="1604328672334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1603632454500" />
+    <state x="463" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1604328672334" />
+    <state x="518" y="287" key="NewPhpFileDialog" timestamp="1604494014271">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1604494014271" />
+    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604531332540">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1604531332540" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1604536710062">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604536710062" />
   </component>
 </project>

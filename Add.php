@@ -1,10 +1,11 @@
 <?php
-require_once 'inc/header.php';
-require_once 'Classes/DB.php';
-require_once 'Classes/Product.php';
-require_once 'Classes/Image.php';
+require_once 'config.php';
 $pro=new Product();
 $categories=$pro->GetAllCategories();
+if(!isset($_SESSION['email']))
+{
+    header('location:index.php');
+}
 ?>
 
 <div class="product">
@@ -38,7 +39,7 @@ $categories=$pro->GetAllCategories();
                             </select>
                         </div>
                         <div class="form-group">
-                            <input name="img" class="form-control" type="file" style="overflow: hidden" >
+                            <input name="img"  class="form-control" type="file" style="overflow: hidden" >
                         </div>
                         <button type="submit" name="save_btn" class="btn btn-primary">Save</button>
                     </form>
@@ -52,30 +53,32 @@ $categories=$pro->GetAllCategories();
                         $quantity=$_POST['quantity'];
                         $cate_id=$_POST['cate_id'];
                         $img=$_FILES['img'];
-
-                        if(true)//valid
-                        {
-                            $image=new Image($img);
-                            $data=[
-                                'name'=>$name,
-                                'price'=>$price,
-                                'descrip'=>$dsrcip,
-                                'quantity'=>$quantity,
-                                'cate_id'=>$cate_id,
-                                'img'=>$image->upload_name,
-                            ];
-
-                            if($pro->Insert($data)==true)
+                        $valid=new Validation();
+                        if($valid->Is_Empty("Name",$name)&& $valid->Is_Empty("Price",$price)&&$valid->Is_Empty("Description",$dsrcip)&&$valid->Is_Empty("Quantity",$quantity)&&$valid->Is_Empty("Image",$img['name'])) {
+                            if ($valid->MaxThan("Description", $dsrcip, 150)&& $valid->MaxThan("Name", $name, 25))
                             {
-                                $image->upload();
-                                $success_msg = "Successfully Added";
+                                if ($valid->Is_Number( "Quantity",$quantity )&&$valid->Is_Number( "Price",$price))
+                                {
+                                    $image = new Image($img);
+                                    $data = [
+                                        'name' => $name,
+                                        'price' => $price,
+                                        'descrip' => $dsrcip,
+                                        'quantity' => $quantity,
+                                        'cate_id' => $cate_id,
+                                        'img' => $image->upload_name,
+                                    ];
+
+                                    if ($pro->Insert($data) == true) {
+                                        $image->upload();
+                                        $success_msg = "Successfully Added";
+                                    } else
+                                        $error_msg = "Can't Add Product";
+                                    require_once 'function/message.php';
+                                }
                             }
-                            else
-                                $error_msg="Can't Add Product";
-
-                            require_once 'function/message.php';
-
                         }
+
 
                     }
                     ?>

@@ -28,26 +28,28 @@ ob_start();?>
             <li class="nav-item active">
                 <a class="nav-link" href="Shopping.php">Shop Now<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#"> username </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
         </ul>
         <ul class="navbar-nav pull-right">
-            <li class="nav-item ">
-                <a class="nav-link" href="<?php ?>">Logout </a>
-            </li>
+            <?php if(isset($_SESSION['email'])):?>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#"><?php echo $_SESSION['email']?> </a>
+                </li>
+            <?php endif;?>
+            <?php if(!isset($_SESSION['email'])):?>
+                <li class="nav-item ">
+                    <a class="nav-link" href="buy_product.php">cart<?php if(isset($_SESSION['cart_j'])) echo "(".count($_SESSION['cart_j']).")"?> </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="login.php">Admin | Login </a>
+                </li>
 
+            <?php endif;?>
+
+            <?php if(isset($_SESSION['email'])):?>
+            <li class="nav-item ">
+                <a class="nav-link" href="logout.php">Logout </a>
+            </li>
+            <?php endif;?>
         </ul>
 
     </div>

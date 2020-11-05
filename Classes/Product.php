@@ -45,6 +45,21 @@ class Product extends DB
         else
             return false;
     }
+    public function QuantityAvail($id)
+    {
+        $query="SELECT * FROM  products  WHERE id='$id';";
+        $result =mysqli_query($this->conn,$query);
+        if(mysqli_num_rows($result)>0)
+        {
+            while ($res=mysqli_fetch_assoc($result))
+            {
+                echo $res['quantity'];
+            }
+        }
+
+        return false;
+    }
+
     public function GetCategory($id)
     {
         $query="SELECT * FROM  products join categories on 
@@ -72,7 +87,17 @@ class Product extends DB
         }
         return false;
     }
-    //edit
+    public function Update_Quantity($id,$RestQuantity)
+    {
+        $query = "Update  products set `quantity`='$RestQuantity' where id='$id'";
+        $result =mysqli_query($this->conn,$query);
+        if($result)
+            return true;
+        else
+            return false;
+
+    }
+        //edit
     public function Update($id,array $data)
     {
         $product =$this->Get_Product($id);

@@ -8,6 +8,11 @@ $pro=new Product();
 $product=$pro->Get_Product($id);
 $categories=$pro->GetAllCategories();
 $Cate_name=$pro->GetCategory($id);
+if(!isset($_SESSION['email']))
+{
+    header('location:index.php');
+}
+
 ?>
 
 <div class="show-product">
@@ -16,7 +21,7 @@ $Cate_name=$pro->GetCategory($id);
         <div class="container mt-5 mb-5">
             <div class="row">
                 <div class="col-md-6">
-                    <img  style="height: 90%" src="assets/images/<?php echo $product['img']?>" class="img-fluid">
+                    <img  style="height: 90%; border-radius: 10px" src="assets/images/<?php echo $product['img']?>" class="img-fluid">
                 </div>
                 <div class="col-md-6 mt-5 ">
                     <form action="" method="post" enctype="multipart/form-data">
@@ -60,28 +65,32 @@ $Cate_name=$pro->GetCategory($id);
                         $quantity=$_POST['quantity'];
                         $cate_id=$_POST['cate_id'];
                         $img=$_FILES['img'];
-                        if(true)
-                        {
-                            $data=[
-                                'name'=>$name,
-                                'price'=>$price,
-                                'descr'=>$descr,
-                                'quantity'=>$quantity,
-                                'cate_id'=>$cate_id,
-                                'img'=>$img,
-                        ];
+                        $valid=new Validation();
+                        if($valid->Is_Empty("Name",$name)&& $valid->Is_Empty("Price",$price)&&$valid->Is_Empty("Description",$descr)&&$valid->Is_Empty("Quantity",$quantity)) {
+                            if ($valid->MaxThan("Description", $descr, 150)&& $valid->MaxThan("Name", $name, 30)) {
+                                if ($valid->Is_Number("Quantity", $quantity) && $valid->Is_Number("Price", $price)) {
+                                    $data = [
+                                        'name' => $name,
+                                        'price' => $price,
+                                        'descr' => $descr,
+                                        'quantity' => $quantity,
+                                        'cate_id' => $cate_id,
+                                        'img' => $img,
+                                    ];
 
-                            if($pro->Update($id,$data)) {
-                                $success_msg = "Successfully Updated";
-                                header('location:Shopping.php');
+                                    if ($pro->Update($id, $data)) {
+                                        $success_msg = "Successfully Updated";
+                                        header('location:Shopping.php');
+                                    } else
+                                        $error_msg = "Failed Update Product";
+
+                                    require_once 'function/message.php';
+
+
+                                }
                             }
-                            else
-                                $error_msg="Failed Update Product";
-
-                            require_once 'function/message.php';
-
-
                         }
+
                     }
 
                     ?>

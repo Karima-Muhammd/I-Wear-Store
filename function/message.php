@@ -1,6 +1,7 @@
+
 <?php if(isset($error_msg) and $error_msg!=''):
 ?>
-<div>
+<div >
     <h6 class="alert alert-danger text-center mt-1" >
         <?php echo $error_msg;  ?></h6>
 </div>
